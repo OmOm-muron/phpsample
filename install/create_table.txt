@@ -1,0 +1,8 @@
+CREATE TABLE diary (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(128) NOT NULL,
+    content VARCHAR(512) NOT NULL,
+    upddate TIMESTAMP NOT NULL
+);
+
+SELECT setval('diary_id_seq', 1000, true);
